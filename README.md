@@ -1,2 +1,1 @@
-# Skill
-#오라클
+DB : Oracle Database SQL*Plus
