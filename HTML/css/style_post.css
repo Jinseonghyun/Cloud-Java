@@ -1,0 +1,21 @@
+#container {
+    width: 80%;
+    margin: 0 auto; /* 가운데 정렬 */
+    border: 2px solid #b1abab;
+    
+}
+
+table, th, td {
+    border: 1px solid black; /* 표 테두리 */
+    border-collapse: collapse; /* 테두리 1줄만 표시해라 */
+    
+}
+
+th, td {
+    padding: 10px;
+}
+
+img, video {
+    width: 80%;
+}
+

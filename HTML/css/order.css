@@ -1,0 +1,65 @@
+* { /* 문서 전체에 적용되는 스타일 */
+    margin: 0; /* 외부 여백*/
+    padding: 0; /* 내부 여백*/
+    box-sizing: border-box; /* width, height 속성이 padding, border를 포함한 값을 가지게 함*/
+    
+}
+
+#container {
+    width: 80%;
+    margin: 40px auto;
+}
+/* 1em = 16pt (16픽셀)*/
+h1 {
+    font-size: 2em; /* 32px 같다.*/
+    margin: 10px;
+}
+
+fieldset {
+    padding: 15px;  /* 상하좌우 전부 준다.*/
+}
+
+fieldset legend {
+    font-weight: bold;   /*bold == 700px  (굵게)*/
+}
+
+ul {
+    list-style: none;  /* 목록 표시 없애기 */ 
+    padding-left: 0;   /*  내부 여백 없애기*/
+}
+
+li {
+    margin:10px;
+  }
+  #product input[type="number"] { /*  input 태그의 type 속성이 number 인 경우 */
+    width:30px;
+    margin-left:10px;
+  }
+
+  #fieldset_2 {
+    margin-top: 10px;
+  }
+
+  #shipping li label { /* shipping 목록의 label 태그*/
+   width:80px;
+   float:left;   /*왼쪽 정렬*/
+   text-align:left; /*텍스트도 왼쪽 정렬*/    
+  }
+  input[type="text"], input[type="tel"], input[type="email"] {
+    width:300px;
+  }
+
+  /* '주문하기', '취소하기' 버튼 */
+form > div {
+    margin-top:20px;
+    display:flex;
+    justify-content: space-around;
+  }
+form > div > input[type="submit"], input[type="reset"] {
+    text-align:center;
+    width:150px;
+    height:40px;      
+    background-color:#fafafa;
+    border:1px solid #ccc;
+    box-shadow: 1px 1px 1px #ccc; /* 그림자*/
+  }
