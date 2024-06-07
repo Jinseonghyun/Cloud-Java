@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="멀티캠퍼스">
+  <meta name="keywords" content="웹퍼블리셔, 웹제작, HTML5, webs">
+
+  <!-- Facebook meta tags -->
+  <!-- https://doit-fwd.tistory.com/10 참조 -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="반응형 사이트 만들기(title)" />
+  <meta property="og:url" content="http://richclub8.dothome.co.kr/responsive/html5/index.html" />
+  <meta property="og:image" content="http://richclub8.dothome.co.kr/assets/ico/icon.png" />
+  <meta property="og:site_name" content="반응형 사이트 만들기(site_name)" />
+  <meta property="og:description" content="반응형 사이트 따라하기(description)" />
+
+  <title>레이아웃 구성하기</title>
+
+  <!-- style -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- 웹 연결: font awesome cdnjs 검색후 font-awesome - Libraries 클릭  -->
+  <!-- 원하는 버전의 CSS api 복사후 적용 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+  <link rel="stylesheet" href="./css/slick.css">
+  <!-- 이미지 슬라이더: slick slider 라이브러리 -->
+  <!-- 참조: https://tinyurl.com/yoh6uy4f -->
+
+  <link rel="stylesheet" href="./css/lightgallery.css">
+  <!-- 이미지 갤러리형 플러그인 -->
+
+  <link rel="stylesheet" href="http://vjs.zencdn.net/c/video-js.css">
+  <!-- 비디오 플레이어 플러그인: 참조 => https://videojs.com/getting-started/ -->
+
+
+
+  <!-- 구글 웹 폰트 설정 -->
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+</head>
+
+<body>
+  <header id="header">
+    <div class="container">
+      <div class="row">
+        <div class="header">
+          <!-- header_menu -->
+          <div class="header_menu">
+            <a href="#">Blog</a>
+            <a href="#">Github</a>
+            <a href="https://www.kfo.ai/">K-Digital</a>
+          </div>
+          <!-- header_title -->
+          <div class="header_title">
+            <h1>K-Digital Training</h1><br>
+            <a href="https://www.kfo.ai/">KFO 하이테커</a>
+          </div>
+          <!-- header_icon -->
+          <div class="header_icon">
+            <ul>
+              <!-- fontawesome 6.5 표기 -->
+              <li><a href="#"><i class="fa-brands fa-html5" aria-hidden="true"></i><span>HTML5</span></a></li>
+              <li><a href="#"><i class="fa-brands fa-github" aria-hidden="true"></i><span>GitHub</span></a></li>
+              <li><a href="#" class="facebook"><i class="fa-brands fa-facebook-square fa-1x"
+                    aria-hidden="true"></i><span>Fackbook</span></a></li>
+              <li><a href="#" class="twitter"><i class="fa-brands fa-twitter"
+                    aria-hidden="true"></i><span>twitter</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav id="nav">
+    <div class="container">
+      <div class="row">
+        <div class="nav">
+          <h2 class="ir_su">전체 메뉴</h2>
+          <div>
+            <h3>HTML Reference</h3>
+            <ol>
+              <li><a href="#">HTML 태그(Tag)</a></li>
+              <li><a href="#">블록 요소/인라인 요소</a></li>
+              <li><a href="#">DTD 선언</a></li>
+              <li><a href="#">언어 속성 설정</a></li>
+              <li><a href="#">HTML &lt;title&gt;</a></li>
+              <li><a href="#">HTML &lt;meta&gt;</a></li>
+              <li><a href="#">특수문자</a></li>
+              <li><a href="#">하이퍼 링크</a></li>
+              <li><a href="#">HTML &lt;style&gt;</a></li>
+              <li><a href="#">HTML &lt;html&gt;</a></li>
+              <li><a href="#">HTML &lt;head&gt;</a></li>
+              <li><a href="#">HTML &lt;div&gt;</a></li>
+              <li><a href="#">HTML &lt;colgroup&gt;</a></li>
+              <li><a href="#">HTML &lt;caption&gt;</a></li>
+            </ol>
+          </div>
+          <div>
+            <h3>CSS Reference</h3>
+            <ol>
+              <li><a href="#">CSS 선택자</a></li>
+              <li><a href="#">CSS 단위</a></li>
+              <li><a href="#">CSS 색상</a></li>
+              <li><a href="#">CSS 선언 방법</a></li>
+              <li><a href="#">상대주소와 절대주소</a></li>
+              <li><a href="#">CSS float</a></li>
+              <li><a href="#">이미지 표현 방법</a></li>
+              <li><a href="#">이미지 스프라이트</a></li>
+              <li><a href="#">IR 효과</a></li>
+              <li><a href="#">이미지 최적화</a></li>
+              <li><a href="#">background-color</a></li>
+              <li><a href="#">border-style</a></li>
+              <li><a href="#">font-size</a></li>
+              <li><a href="#">text-align</a></li>
+            </ol>
+          </div>
+          <div>
+            <h3>Responsive</h3>
+            <ol>
+              <li><a href="#">반응형사이트</a></li>
+              <li><a href="#">미디어쿼리</a></li>
+              <li><a href="#">CSS3</a></li>
+              <li><a href="#">웹 접근성 연구소</a></li>
+              <li><a href="#">네이버 널리</a></li>
+              <li><a href="#">다음 다룸</a></li>
+              <li><a href="#">멀티캠퍼스</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <article id="title">
+    <div class="container">
+      <div class="title">
+        <h2>백엔드 개발자에 도전하자~~~</h2>
+        <a href="#" class="btn">
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+          <span class="ir_su">전체메뉴 보기</span>
+        </a>
+      </div>
+    </div>
+  </article>
+  <main>
+    <section id="contents">
+      <div class="container">
+        <h2 class="ir_su">반응형 웹사이트 컨텐즈</h2>
+        <section id="cont_left">
+          <h3 class="ir_su">메뉴 및 게시판 컨텐츠 영역</h3>
+          <article class="column col1">
+            <h4 class="col_tit">Menu</h4>
+            <p class="col_desc">Box-shadow를 이용한 마우스 오버 효과 메뉴입니다.</p>
+            <!-- 메뉴 -->
+            <div class="menu">
+              <ul>
+                <li><a href="#">Cafe <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                <li><a href="#">Tutorial <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                <li><a href="#">WebSite <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                <li><a href="#">Reference <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                <li><a href="#">CSS3 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                <li><a href="#">HTML5 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+            <!-- //메뉴 -->
+          </article>
+          <article class="column col2">
+            <h4 class="col_tit">Notice</h4>
+            <p class="col_desc">게시판 영역(한줄 효과, 두줄 효과 게시판)</p>
+            <!-- 게시판1 -->
+            <div class="notice1">
+              <h5>Notice1</h5>
+              <ul>
+                <li><a href="#">이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다.</a></li>
+                <li><a href="#">이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다.</a></li>
+                <li><a href="#">이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다.</a></li>
+                <li><a href="#">이 줄은 한줄 효과입니다. 이 줄은 한줄 효과입니다.</a></li>
+              </ul>
+              <a href="#" class="more" title="더 보기">More <i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+            </div>
+            <!-- //게시판1 -->
+            <!-- 게시판 2 -->
+            <div class="notice2 mt15">
+              <h5>Notice2</h5>
+              <ul>
+                <li><a href="#">이 줄은 두줄 효과입니다. 이 줄은 두줄 효과입니다. 이 줄은 두줄 효과입니다. 이 줄은 두줄 효과입니다.</a></li>
+                <li><a href="#">이 줄은 두줄 효과입니다. 이 줄은 두줄 효과입니다. 이 줄은 두줄 효과입니다. 이 줄은 두줄 효과입니다.</a></li>
+                <li><a href="#">이 줄은 두줄 효과입니다. 이 줄은 두줄 효과입니다. 이 줄은 두줄 효과입니다. 이 줄은 두줄 효과입니다.</a></li>
+                <li><a href="#">이 줄은 두줄 효과입니다. 이 줄은 두줄 효과입니다. 이 줄은 두줄 효과입니다. 이 줄은 두줄 효과입니다.</a></li>
+              </ul>
+              <a href="#" class="more" title="더 보기">More <i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+            </div>
+            <!-- //게시판2 -->
+          </article>
+          <article class="column col3">
+            <h4 class="col_tit">Blog</h4>
+            <p class="col_desc">해상도에 따른 이미지 표현 방법</p>
+            <!-- blog1 -->
+            <div class="blog1">
+              <h5 class="ir_su">Image1</h5>
+              <figure> <!-- 삽화/다이어그램/사진드에 대해 문서와 상관없이 독립적인 콘텐츠를 정의 -->
+                <a href="#">
+                  <img src="./img/blog4_@1.jpg" class="img-normal" alt="normal image">
+                  <img src="./img/blog4_@2.jpg" class="img-retina" alt="retina image">
+                  <figcaption>반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다.
+                  </figcaption>
+                </a>
+              </figure>
+            </div>
+            <!-- blog2 -->
+            <div class="blog2 mt15">
+              <div class="img-retina">
+                <h5>Image2</h5>
+              </div>
+              <p>반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다. 반응형 웹 사이트 이미지 글입니다.</p>
+            </div>
+          </article>
+        </section>
+        <section id="cont_center">
+          <h3 class="ir_su">반응형 웹 중앙 컨텐츠</h3>
+          <article class="column col4">
+            <h4 class="col_tit">Slick-Slider</h4>
+            <p class="col_desc">slick.js를 이용한 이미지 슬라이더 효과 적용.</p>
+            <!-- 이미지 슬라이더 적용 -->
+            <div class="slider">
+              <div>
+                <figure>
+                  <img src="./img/slider01.jpg" alt="이미지1">
+                  <figcaption><em>Responsive Site</em><span>슬라이드 프러그인 적용 반응형 이미지 슬라이드</span></figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="./img/slider02.jpg" alt="이미지2">
+                  <figcaption><em>Responsive Site</em><span>슬라이드 프러그인 적용 반응형 이미지 슬라이드</span></figcaption>
+                </figure>
+              </div>
+              <div>
+                <figure>
+                  <img src="./img/slider03.jpg" alt="이미지3">
+                  <figcaption><em>Responsive Site</em><span>슬라이드 프러그인 적용 반응형 이미지 슬라이드</span></figcaption>
+                </figure>
+              </div>
+            </div>
+            <!-- //이미지 슬라이더 적용 -->
+          </article>
+          <article class="column col5">
+            <h4 class="col_tit">Blend Effect</h4>
+            <p class="col_desc">Background-blend-mode와 mix-blend-mode, filter 효과 이미지.</p>
+            <!-- lightbox -->
+            <div class="lightbox square clearfix">
+              <a href="img/light01_s.jpg"><img src="./img/light01.jpg" alt="이미지"><em>blur</em></a>
+              <a href="img/light02_s.jpg"><img src="./img/light02.jpg" alt="이미지"><em>brightness</em></a>
+              <a href="img/light03_s.jpg"><img src="./img/light03.jpg" alt="이미지"><em>contrast</em></a>
+              <a href="img/light04_s.jpg"><img src="./img/light04.jpg" alt="이미지"><em>grayscale</em></a>
+              <a href="img/light05_s.jpg"><img src="./img/light05.jpg" alt="이미지"><em>hue-rotate</em></a>
+              <a href="img/light06_s.jpg"><img src="./img/light06.jpg" alt="이미지"><em>invert</em></a>
+              <a href="img/light07_s.jpg"><img src="./img/light07.jpg" alt="이미지"><em>opacity</em></a>
+              <a href="img/light08_s.jpg"><img src="./img/light08.jpg" alt="이미지"><em>saturate</em></a>
+              <a href="img/light09_s.jpg"><img src="./img/light09.jpg" alt="이미지"><em>sepia</em></a>
+              <a href="img/light10_s.jpg"><img src="./img/light10.jpg" alt="이미지"><em>Mix</em></a>
+            </div>
+            <!-- //lightbox -->
+          </article>
+          <article class="column col6">
+            <h4 class="col_tit">Video</h4>
+            <p class="col_desc">반응형 영상을 보여주는 영역.</p>
+            <div class="video">
+              <!-- 사용자 서버의 영상 출력-->
+              <!-- <video class="video-js vjs-default-skin" controls autoplay preload="auto" width="400" height="300" data-setup="{}">
+                                <source src="/img/PostgreSQL.mp4" type="video/mp4">
+                            </video> -->
+
+              <!-- 유튜브 영상 -->
+              <iframe width="1066" height="600" src="https://www.youtube.com/embed/E-PzX2mKGUQ"
+                title="자바스크립트 기초 입문 강의 30분 완성" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+          </article>
+        </section>
+        <!-- **************************************** -->
+        <section id="cont_right">
+          <h3 class="ir_su">반응형 사이트 오른쪽 컨텐츠</h3>
+          <article class="column col7">
+            <h4 class="col_tit">Effect1</h4>
+            <p class="col_desc">CSS3의 transform을 이용한 마우스 오버효과입니다.</p>
+            <!-- side1 -->
+            <div class="side1">
+              <figure class="front">
+                <img src="./img/side1.jpg" alt="이미지2">
+              </figure>
+              <div class="back">
+                <i class="fa fa-heart fa-4x" aria-hidden="true"></i>
+              </div>
+            </div>
+            <!-- side1//-->
+          </article>
+
+          <article class="column col8">
+            <h4 class="col_tit">Effect2</h4>
+            <p class="col_desc">CSS3의 transform을 이용한 마우스 오버효과입니다.</p>
+            <!-- side2 -->
+            <div class="side2">
+              <figure class="front">
+                <img src="./img/side2.jpg" alt="이미지2">
+                <figcaption>
+                  <h3>Hover Effect</h3>
+                </figcaption>
+              </figure>
+              <figure class="back">
+                <img src="./img/side4.jpg" alt="이미지2">
+                <figcaption>
+                  <h3>Hover Effect</h3>
+                </figcaption>
+              </figure>
+            </div>
+            <!-- side2//-->
+          </article>
+
+          <article class="column col9">
+            <h4 class="col_tit">Effect3</h4>
+            <p class="col_desc">CSS3의 transform을 이용한 마우스 오버효과입니다.</p>
+            <!-- side3 -->
+            <div class="side3">
+              <figure>
+                <img src="./img/side3.jpg" alt="이미지3">
+                <figcaption>
+                  <h3>Hover<em>Effect</em></h3>
+                </figcaption>
+              </figure>
+            </div>
+            <!-- side3//*-->
+          </article>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer">
+          <ul>
+            <li><a href="#">사이트 도움말</a></li>
+            <li><a href="#">사이트 이용약관</a></li>
+            <li><a href="#">사이트 운영원칙</a></li>
+            <li><a href="#"><strong>개인정보취급방침</strong></a></li>
+            <li><a href="#">책임의 한계와 법적고지</a></li>
+            <li><a href="#">게시중단요청서비스</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+          <address>
+            Copyright &copy;
+            <a href="https://lc.multicampus.com/"><strong>멀티캠퍼스</strong></a>
+            ALL Rights Reserved.
+          </address>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 자바스크립트 라이브러리 연결 -->
+  <script src="./js/jquery.min_1.12.4.js"></script>
+  <script src="./js/modernizr-custom.js"></script>
+  <script src="./js/slick.min.js"></script>
+  <script src="/js/lightgallery.min.js"></script>
+  <script src="http://vjs.zencdn.net/c/video.js"></script> <!-- 비디오 플레이어 -->
+
+  <script src="./js/obj.js"></script>
+
+
+</body>
+
+</html>
