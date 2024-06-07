@@ -1,1 +1,1 @@
-Java, Spring
+Java, Spring, HTML, CSS, JS
