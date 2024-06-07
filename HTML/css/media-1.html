@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 기본 배경 */
+        body {
+            background: url(./images/bg2.png) no-repeat fixed; /* no-repeat 전체를 다 보여줄거다 */
+            background-size: cover; /* 100% 100% 이미지의 100% 를 다 뿌려줘라 (이미지 크기로 지정)*/
+        }
+
+        /* 반응형 웹*/
+        /* 사이즈가 가로 1024px 이하면 다음과 같이 top.jpg 로 배경 변경 */
+        @media screen and (max-width: 1024px) {
+            body {
+                background: url(./images/top.jpg) no-repeat fixed;
+                background-size: cover;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                background: url(./images/1.png) no-repeat fixed;
+                background-size: cover;
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            body {
+                background: url(./images/2.jpg) no-repeat fixed;
+                background-size: cover;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

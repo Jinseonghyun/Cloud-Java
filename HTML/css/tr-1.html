@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./tr-ani-styled-1.css">
+    <style>
+        .tr1 h1 {
+            font-size: 50px;
+            text-align: center; /* 텍스트 가운데 정렬 */
+            color: #ffffff;
+        }
+
+        .tr1 {
+            width: 100px;
+            height: 100px;
+            background-color: #00f;
+            border: 1px solid #030303;
+
+            /* 색상 변경, 크기 변경 */
+            transition-property: background-color, transform, width, height; /* 어떤 부분을 변경할지 */
+            transition-duration: 2s, 3s; /*변경하는 시간*/
+        }
+
+        .tr1:hover {
+            background-color: red;
+            transform: rotate(360deg);
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tr1">
+        <h1>!</h1>
+    </div>
+    <div class="box1">
+        <h3>CSS3 애니메이션</h3>
+    </div>
+      <div class="box2">
+        <h3>box2</h3>
+    </div>
+    <div class="box3">
+        <h1>
+          <span>안</span>
+          <span>녕</span>
+          <span>하</span>
+          <span>세</span>
+          <span>요</span>
+        </h1>
+    </div>
+</body>
+</html>

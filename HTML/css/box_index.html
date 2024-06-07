@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃_박스</title>
+    <style>
+        div { /* 생성자 */
+            border: 5px solid black;
+            margin: 10px; /* 10px 씩 div 마다 간격 */
+        }
+        .box1 {
+            box-sizing: border-box; /* padding, border를 포함한 영역을 한 영역으로 본다. */
+            width: 200px; /* 고정형(반응형 아님) */
+            height: 200px;
+            box-shadow: 2px -2px 5px 0; /* 그림자 좌우, 상하 (양수음수로 구분)*/
+            border-radius: 50%;  /* 50 라운드는 원형 (가로 세로의 길이에 따라 다를 수 있다.) */
+        }
+        .box3 {
+            border: 10px solid rgb(20, 91, 226);
+            border-radius: 15px; /* 모서리 둥글게 */
+            box-sizing: content-box; /* padding, border를 미 포함한 영역을 한 영역으로 본다. */
+            width: 50%;  /* 반응형(가변형-브라우저의 50%) */
+            height: 100px; /* 30% 해보면 높이는 내가 차지하고 있는 body 크기가 기준이다. */
+            box-shadow: 5px 5px 15px 5px blue; /* 그림자*/ 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box1">box2</div>
+    <div class="box3">box3</div>
+</body>
+</html>

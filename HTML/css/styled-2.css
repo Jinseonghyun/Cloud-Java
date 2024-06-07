@@ -1,0 +1,54 @@
+body {
+    margin: 30px;
+}
+
+div {
+    border: 1px solid black;
+}
+
+#wrap {
+    width: 400px;
+    height: 1000px;
+    border: 1px solid rgb(194, 191, 191);
+    position: relative; /* 자식 요소의 기준이 됨, 기본값 이기에 내 객체 앞에 있는 애 기준으로 움직임*/
+}
+
+.box {
+    position: absolute; /* 부모 요소를 기준으로 위치를 잡음 ,부모가 가지고 있는 범위 내에서 움직임*/ /*박스에 위치값 정하지 않았기에 한 곳에 붙어 있다.*/
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+#crd1 {
+    top: 0;
+    left: 0;
+    background-color: royalblue;
+}
+
+#crd2 {
+    top: 0;
+    right: 0;
+    background-color: rgb(215, 13, 151);
+}
+
+#crd3 {
+    bottom: 0;
+    left: 0;
+    background-color: rgb(80, 215, 13);
+}
+
+#crd4 {
+    top: 0;
+    left: 150px;
+    background-color: rgb(215, 134, 13);
+}
+
+#crd5 {
+    top: 5px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(41, 206, 176);
+    position: fixed;  /* 브라우저 기준으로 위치를 잡음 (항상 고정된 위치)*/
+}

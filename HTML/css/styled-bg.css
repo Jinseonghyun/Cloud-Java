@@ -1,0 +1,74 @@
+div {
+    width: 300px;
+    height: 150px;
+    border-radius: 15px;  /*테두리 둥글게*/
+    /* background-color: #ccc; */
+}
+
+h3 {
+    font-weight: bold;  /* 700px = bold*/
+    font-size: 16px;
+    color: rgb(0, 0, 0, 0.5); /* rgb 로 글자색 만들고 마지막에 0.5 투명도 지정 (50%)*/
+}
+
+#box1 {
+    float: left;  /* 값을 왼쪽으로 */
+}
+
+#box2 {
+    float: right; /* 값을 오른쪽으로 */
+}
+
+.grad1 {
+     background: blue;
+     background: linear-gradient(blue, white);  /*그라데이션 방향에 따라 블루에서 점점 하얀색으로  (아무것도 없으면 위에서 아래로)*/
+     /* 초기 사파리 브라우저용 (위와 같은 코드)*/
+     /*background: -webkit-linear-gradient(to right, blue, white); */
+}
+
+.grad2 {
+    background: #ff0000;
+    background: linear-gradient(to right bottom, #ff0000, #ffffff);  /*그라데이션 방향에 따라 블루에서 점점 하얀색으로*/
+    /*background: linear-gradient(315deg, #ff0000, #ffffff); */ /*각도로도 방향 설정가능*/ 
+
+}
+
+.grad3 {
+    background: #06f;
+    background: linear-gradient(to left bottom, #06f, #fff 50%, rgb(216, 24, 24));
+    /* 그라데이션 방향, 시작색, 종료색 및 위치, 종료색 */
+  }
+
+.grad4 {
+    background: #ff0000;
+    background: radial-gradient(white, yellow, red);
+}
+
+.grad5 {
+    background: #ff0000;
+    background: radial-gradient(circle at 30% 30%, white, yellow, red);
+    /* 모양 at 위심위치(생략시 가운데), 중심색, 중간색, 종료색 */
+}
+.grad6 {
+    background: #ff0000;
+    background: radial-gradient(circle farthest-side at 30% 30%, white, yellow, red);
+    /* 모양 크기 지정 at 위심위치(생략시 가운데), 중심색, 중간색, 종료색 */
+}
+.grad7 {
+    background: #ff0000;
+    background: repeating-linear-gradient(yellow, red 20px);
+}
+.grad8 {
+    background: red;
+    background: repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+}
+
+.grad9 {
+    background: red;
+    background: repeating-radial-gradient(circle, yellow, red 10%);
+}
+  
+.grad10 {
+    background: red;
+    background: repeating-radial-gradient(circle, yellow, yellow 10%, red 10%, red 20%);
+}
