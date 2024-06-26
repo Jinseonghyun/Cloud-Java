@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="myClass" class="com.test07.MyClass" /> <!--lazy-init="true" 너무 많은 bean 이 생성 될 수 있기에 lazy-init 의도적으로 생성 시점 늦춘다. getBean이 생성 될 때 만들어짐-->
+	<bean id="date" class="java.util.Date"></bean>
+	
+	<bean id="beanTest" class="com.test07.BeanTest">
+		<constructor-arg ref="date" />
+		
+		<property name="number" value="22" />
+		
+		<property name="array">
+			<array>
+				<value>이창진</value>
+				<value>김창진</value>
+				<value>박창진</value>
+			</array>
+		</property>
+		
+		<property name="list">
+			<list>
+				<value>하나</value>
+				<value>두울</value>
+				<value>"세엣"</value>
+			</list>
+		</property>
+		
+		<property name="map">
+			<map>
+				<entry>
+					<key><value>1</value></key>
+					<value>하나</value>
+				</entry>
+				
+				<entry key="2" value="두울" />
+			</map>
+		</property>
+		
+		<property name="my">
+			<list>
+				<bean class="com.test07.MyClass">
+					<property name="name" value="이창진" />
+					<property name="age" value="20" />
+				</bean>
+				<ref bean="myClass"></ref>
+			</list>
+		</property>
+		
+	</bean>
+		
+	
+</beans>
